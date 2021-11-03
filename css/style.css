@@ -149,8 +149,6 @@ h5{
 .para{
 	 margin-top:450px ;
 }
-
-
 .box{
 	width:300px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
@@ -371,5 +369,15 @@ h5{
         top: 50%
     }
 }
+.dropdown-menu{
 
- 
+font-family:cursive;
+background-color: black;
+opacity: 0.7;
+}
+
+.dropdown-item{
+	color: white;
+	opacity: 1;
+
+}
