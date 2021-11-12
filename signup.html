@@ -30,18 +30,20 @@
         <br>
         <h4>Enter Details</h4>
         <br>
-        <form id="details" action="#">
+        <form action="login.html" id="Details" >
             <label>Name:</label>      
-            <input type="text" name="Uname" id="fristname" placeholder="Frist name">    
+            <input type="text" name="Uname" id="fristname" placeholder="Frist name" onkeyup="Validate(this)" required>    
            
-            <input type="Password" name="Pass" id="lastname" placeholder="Last name">
+            <input type="text" name="Uname" id="lastname" placeholder="Last name" onkeyup="Validate(this)" required>
             <br><br>
             <label>Email:</label>
-            <input type="email" name="email" id="email" placeholder="123@gmail.com">
-            <br>
-            <br>
-            <label>Date Of Birth:</label>
-            <input type="date" name="date" id="date">
+            <input type="email" name="email" id="email" placeholder="123@gmail.com" required>
+            <br><br>
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="" minlength="10" maxlength="28" pattern="[0-9]{10}||[0-9]{3}-[0-9]{3}-[0-9]{4}||[0-9]{3}.[0-9]{3}.[0-9]{4}||[0-9]{3} [0-9]{3} [0-9]{4}" onkeyup="validatephone(this);"required>
+            <br><br>
+            <label>Date Of Birth:</label>10
+            <input type="date" name="date" id="date" required>
             <br><br>
             <label>Gender: </label><label> Male</label>
             <input type="checkbox" name="male" id="Gender">
@@ -59,13 +61,13 @@
     <option value="niick name?">
   </datalist>
   <br><br> 
-  <input type="text" name="answer" id="answer" placeholder="Your Answer"> <br><br>
+  <input type="text" name="answer" id="answer" placeholder="Your Answer" required> <br><br>
   <label>Password:</label>
-  <input type="password" name="passs" id="passs" placeholder="enter-password"> <br><br>
+  <input type="password" name="pass" id="pass1" placeholder="enter-password" minlength="8" maxlength="16" required> <br><br>
   <label>Confirm:</label>
-  <input type="password" name="passs" id="passs" placeholder="re-enter-password"> <br><br>
+  <input type="password" name="pass" id="pass2" placeholder="re-enter-password" onkeyup="checkPass(); return false;"required> <br><br>
 
-            <a href="login.html"><input type="button" name="log" id="acc" value="Create an Account"></a>       
+  <button type="submit" name="log" id="acc" value="Create an Account">Create an Account</button>       
         </form>     
     </div>
     <div class="log-image">
@@ -73,6 +75,6 @@
     </div>
 
 </div>
-    
+<script src="js/form.js"></script>
 </body>
 </html>

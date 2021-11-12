@@ -30,21 +30,21 @@
     </header> 
 
 
-    <div class="login">
+    <div class="login"> 
         <br>
         <h4>Login Here</h4>
         <img src="images/user-male.png" alt=""> 
-        <form id="login" action="#">    
-            <label>User Name        
+        <form id="login" action="index.html" onsubmit="return validate2()">    
+            <label>Email       
             </label><br>    
-            <input type="text" name="Uname" id="Uname" placeholder="Username">    
+            <input type="email" name="Uname" id="Email1" placeholder="xyz@gmail.com" required>    
             <br><br>    
             <label>Password         
             </label><br>    
-            <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+            <input type="Password" name="Pass" id="Pass1" placeholder="Password" required autofocus>    
             <br><br>    
-            <a href="index.html"><input type="button" name="log" id="log" value="Log In Here"></a>     
-            <a href="signup.html"><input type="button" name="log" id="signup" value="Create an Account"></a>
+            <button type="submit"  name="log" id="log" value="Log In Here">log In Here</button>
+            <a href="signup.html"><input type ="button" name="log" id="signup" value="Create an Account"></a>
             <br>   
             <input type="checkbox" id="check">    
             <span>Remember me</span>    
@@ -56,6 +56,6 @@
         <img src="images/43cefd0161b9e617f8c3de51922ab801.jpg" alt="">
     </div>
     
-    
+    <script src="js/form.js"></script>
 </body>
 </html>
